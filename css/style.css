@@ -339,6 +339,7 @@ main {
 
 
 /*termina contenido segundo*/
+
 .contenido-tercero {
     flex: 1;
     background-color: #f4f4f4;
@@ -348,6 +349,77 @@ main {
 }
 
 
+/*lo q opinan nuestros clientes*/
+
+.contenedorBq_card2{
+    display: grid;
+    grid-column: 2/ -2;
+    display: flex;
+    justify-content: space-between;
+    }
+    
+    .cardBq2{
+    max-width: 20em;
+    background-color: rgba(250, 250, 250, 0.95);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    justify-content: space-between;
+    }
+    
+    .cardBq_imagen{
+    max-height: 20em;
+    overflow: hidden;
+    display: flex;
+   
+    }
+    
+    .cardBq_contenido{
+    padding: 1em 1em 1em;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    
+    
+    }
+    
+    .cardBq_contacto{
+    border-bottom: 1px solid rgba(0, 78, 146, 0.2);
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    
+    
+    }
+    
+.cardBq_nombre{
+    margin: 0;
+    color: #004e92;
+}
+    
+.cardBq_texto{
+    font-size: 20px;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+    
+.cardBq_clientes{
+    display: flex;
+}
+
+.cardBq_footer{
+        display: flex;
+        -ms-flex-align: start;
+}
+
+.h2_clientes-opinan {
+    text-align: center;
+    color: #004e92;
+    font: italic;
+}
 
 footer {
     background-color: #333;
