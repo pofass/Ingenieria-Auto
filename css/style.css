@@ -87,28 +87,31 @@ main {
     flex: 1;
     background-color: #f4f4f4;
     margin: 10px;
-    padding: 20px;
+    padding: 100px;
     border: 1px solid #ddd;
     background-image: url("../Images/Auto02.png");
     background-size: cover;
     background-position: center;
     opacity: 1;  /*Ajusta la opacidad según tus preferencias*/ 
     z-index: 0;  /*Coloca la imagen de fondo detrás del contenido */
+    border-radius: 10px;
+    border: 1px solid #ddd;
     
 }
-
 
 
 .contenido-primero h2 a {
     padding: 0;
     margin: 0;
+   
 }
 
 .contenido-primero h2 {
 
     text-align: center;
-    color:rgb(129, 153, 153);
+    color:rgb(254, 255, 255);
     font-size: 40px;
+    text-shadow: 0 2px 4px #000;
 }
 
 .contenido-primero h2 a {
@@ -127,6 +130,7 @@ main {
     color:rgb(226, 230, 230);
     text-align: center;
     font-size: 16px;
+    text-shadow: 0 2px 4px #000;
     
 }
 
@@ -299,7 +303,7 @@ main {
  .contenido-auto03 {
     display: flex;
     background-color: #f4f4f4;
-    padding: 200px;
+    padding: 300px;
     margin: 0;
     background-size: cover;
     background-position: center;
@@ -307,33 +311,36 @@ main {
     flex-direction: column;
     border-radius: 10px;
     border: 1px solid #ddd;
-    opacity: 0.8;
+    opacity: 1;
 
     
  }
 
  .contenido-auto03 h2{
     text-align: top;
-    color:rgb(1, 17, 17);
+    color:rgb(255, 255, 255);
     font-size: 40px;
-    padding: 0;
     margin: 0;
+    text-shadow: 0 2px 4px #000;
  }
 
 
 .contenido-auto03 p {
     text-align: center; 
-    color:rgb(22, 238, 105);
+    color:rgb(255, 255, 255);
+    text-shadow: 0 2px 4px #000;
     
 }   
 
 .contenido-auto03 h2 a {
     text-decoration: none;
-    color:rgb(1, 17, 17);
+    color:rgb(255, 255, 255);
+    text-shadow: 0 2px 4px #000;
 }
 .contenido-auto03 a:hover {
     text-decoration: underline; /* Agregar subrayado al pasar el mouse por encima */
-    color:rgb(7, 129, 129); /* Cambiar el color al pasar el mouse por encima (opcional) */
+    color:rgb(255, 255, 255); /* Cambiar el color al pasar el mouse por encima (opcional) */
+    
 }
  
 
