@@ -443,9 +443,7 @@ footer {
 @media all and (min-width:600px) and (max-width:1023px) {
 
 
-        body {
-            background-color: red;
-        }
+        
 
 
 
@@ -645,10 +643,7 @@ footer {
                         /*-------------------------------empeiza responsive mobile---------------------------------------------------------*/
 @media all and (max-width: 599px) {
 
-    body {
-        background-color: violet;
-    }
-
+    
     
     header {
         width: auto;
