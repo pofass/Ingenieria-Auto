@@ -707,7 +707,7 @@ footer {
     
     /*contenido prmiero*/
     .contenido-primero {
-        margin: 0;
+        margin: auto;
         padding: 0;
         
     }
@@ -742,7 +742,7 @@ footer {
         display: flex;
         justify-content: center;
         padding: 10px;
-        margin: 90px;
+        margin: auto;
         flex-direction: column;
         
         
@@ -789,13 +789,14 @@ footer {
     .imagen_clientes img {
         
         max-width: 90%;
+        padding: 10px;
        
     }
 
 #h2-h3-contenido-segundo {
     text-align: center;
-    padding: 5px;
-    margin: 10px;
+    padding: 8px;
+    margin: auto;
     
 }
 

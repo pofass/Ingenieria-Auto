@@ -173,20 +173,51 @@ footer {
 }
 
 
-@media all and (min-width:600px) and (max-width:1023px) {
-
-
-    body {
-        background-color: red;
-    }
-
-}
 
 
 @media all and (max-width: 599px) {
 
-    body {
-        background-color: violet;
+
+
+    nav {
+        background-color: #24303c;
+        color: white;
+        padding: 0;
+        margin: 0;
+        width: auto;
+        
+    }
+
+
+    
+    nav ul {
+        list-style-type: none;
+        display: block;
+        padding: 0;
+        margin: 0;
+        float: none;
+        box-sizing: border-box;
+        
+    }
+
+    nav ul li a {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #000407;
+    width: 100%;
+} 
+    
+
+    nav ul li {
+        display: block;
+        padding: 0;
+        margin-bottom: 5px;
+       
+        
     }
 
 }
