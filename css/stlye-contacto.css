@@ -177,7 +177,9 @@ footer {
 
 @media all and (max-width: 599px) {
 
-
+    header {
+        width: auto;
+    }
 
     nav {
         background-color: #24303c;
