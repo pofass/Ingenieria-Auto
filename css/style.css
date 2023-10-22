@@ -83,8 +83,8 @@ main {
 
 
 /*contenido prmiero*/
+
 .contenido-primero {
-    flex: 1;
     background-color: #f4f4f4;
     margin: 10px;
     padding: 100px;
@@ -110,7 +110,6 @@ main {
 
     text-align: center;
     color:rgb(254, 255, 255);
-    font-size: 40px;
     text-shadow: 0 2px 4px #000;
 }
 
@@ -139,13 +138,17 @@ main {
 
 /*empieza contenido segundo*/
 .contenido-segundo {
-    flex: 1;
     background-color: #f4f4f4;
    /* background-color: #24303c;*/
     margin: 10px;
     padding: 20px;
     border: 1px solid #ddd;
 }
+
+.contenido-auto03 img {
+    max-width: auto;
+    
+ }
 .contenido-segundo h2 {
     text-align: center;
     font-size: 30px;
@@ -153,6 +156,7 @@ main {
 
 .contenido-segundo h3 {
     font-size: 20px;
+    text-align: center;
 }
 
 .imagen_clientes {
@@ -183,9 +187,10 @@ main {
 
 .autos_cards {
     display: flex;
-    justify-content: center;
-    margin-right: 10px;
+    align-items: center;
     padding: 10px;
+    margin-left: 50px;
+    justify-content: center;
     
 }
 
@@ -303,7 +308,7 @@ main {
  .contenido-auto03 {
     display: flex;
     background-color: #f4f4f4;
-    padding: 300px;
+    padding: 200px;
     margin: 0;
     background-size: cover;
     background-position: center;
@@ -317,10 +322,8 @@ main {
  }
 
  .contenido-auto03 h2{
-    text-align: top;
     color:rgb(255, 255, 255);
     font-size: 40px;
-    margin: 0;
     text-shadow: 0 2px 4px #000;
  }
 
@@ -543,16 +546,16 @@ footer {
     .autos_cards {
         display: flex;
         justify-content: center;
-        
+        align-items: center;
         padding: 10px;
-        margin: 90px;
+        margin: auto;
         flex-direction: column;
         
         
     }
     
     .autos_cards img {
-        max-width: 110%;
+        max-width: 60%;
 
     }
     
@@ -584,18 +587,11 @@ footer {
      .contenido-auto03 {
         display: flex;
         background-color: #f4f4f4;
-        padding: auto;
-        margin: 0;
-        flex: 1;
         padding: 70px;
-        
-    
-        
-     }
-     .contenido-auto03 img {
-        max-width: auto;
+        margin: 0;
         
      }
+     
     
      
      
@@ -604,7 +600,7 @@ footer {
     /*termina contenido segundo*/
     
     .contenido-tercero {
-        flex: 1;
+        
         background-color: #f4f4f4;
         margin: 10px;
         padding: 20px;
@@ -781,7 +777,7 @@ footer {
         display: flex;
         justify-content: center;
         padding: 0;
-        margin: 100px;
+        margin: 50px;
         flex-direction: column;
     
     }
@@ -804,17 +800,20 @@ footer {
      .contenido-auto03 {
         display: flex;
         background-color: #f4f4f4;
-        padding: auto;
+        padding: 0;
         margin: 0;
-        
-        padding: 100px;
         
     
         
      }
-     .contenido-auto03 img {
-        max-width: 100%;
-        
+
+   
+
+     .contenido-auto03 h2{
+        color:rgb(255, 255, 255);
+        margin: 0;
+        text-shadow: 0 2px 4px #000;
+        font-size: 30px;
      }
     
      
@@ -842,7 +841,7 @@ footer {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        margin: 100px;
+        margin: auto;
         
         }
         
