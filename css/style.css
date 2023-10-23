@@ -197,6 +197,7 @@ main {
 .auto-cards-individual {
     margin: 2px;
     padding: 2px;
+    border-radius: 10px;
 }
 
 .autos_cards :hover {
