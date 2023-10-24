@@ -359,8 +359,6 @@ main {
 /*lo q opinan nuestros clientes*/
 
 .contenedorBq_card2{
-    display: grid;
-    grid-column: 2/ -2;
     display: flex;
     justify-content: space-between;
     }
@@ -380,6 +378,7 @@ main {
     max-height: 20em;
     overflow: hidden;
     display: flex;
+    justify-content: center;
    
     }
     
@@ -390,6 +389,10 @@ main {
     align-items: center;
     
     
+    }
+
+    .cardBq_contenido img {
+        max-width: 60%;
     }
     
     .cardBq_contacto{
@@ -878,9 +881,10 @@ footer {
     .contenedorBq_card2{
         
         display: flex;
-        justify-content: space-between;
+        justify-content:center;
         flex-direction: column;
         margin: auto;
+        align-items: center;
         
         }
         
