@@ -130,6 +130,13 @@ figure {
 
 /*aca empieza el flexbox*/
 
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
 .tarjeta {
     margin: 0;
     width: 33%;
@@ -157,9 +164,14 @@ figure {
 
 }
 
+/* .thumbnail :hover {
+    transition: transform 0.3s; 
+    transform: scale(1.2) 
+} */
+
 .thumbnail :hover {
-    transition: transform 0.3s; /* Agregar una transición suave */
-    transform: scale(1.2) /*agranda la img al pasar por encima con el mouse*/
+    transition: transform 0.3s; 
+    transform: scale(1.1) 
 }
 
 .tarjeta-content p {
