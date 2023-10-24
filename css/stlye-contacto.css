@@ -142,10 +142,11 @@ footer svg:not(:last-child) {
     width: 100%;
 } 
 
-.mapa{
+/* .mapa{
     margin-top: 5px;
     margin-bottom: 0px;
-}
+} */
+
 
 footer {
     background-color: #333;
