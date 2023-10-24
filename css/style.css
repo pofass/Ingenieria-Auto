@@ -359,8 +359,6 @@ main {
 /*lo q opinan nuestros clientes*/
 
 .contenedorBq_card2{
-    display: grid;
-    grid-column: 2/ -2;
     display: flex;
     justify-content: space-between;
     }
@@ -380,6 +378,7 @@ main {
     max-height: 20em;
     overflow: hidden;
     display: flex;
+    justify-content: center;
    
     }
     
@@ -390,6 +389,10 @@ main {
     align-items: center;
     
     
+    }
+
+    .cardBq_contenido img {
+        max-width: 60%;
     }
     
     .cardBq_contacto{
@@ -429,6 +432,44 @@ main {
     color: #004e92;
     font: italic;
 }
+/*Icono whatsapp animacion*/
+.icono-whatsapp {
+    float: right;
+    position: fixed;
+    right: 30px;
+    top: 93vh;
+    z-index: 100;
+    animation: mianimacion 10s infinite alternate;
+    animation-timing-function: ease-in-out;
+    
+}
+
+#wpp {
+    height: 48px;
+    width: 48px;
+    margin-right: 1em;
+    
+    
+}
+
+#wpp:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+@keyframes mianimacion {
+
+    0%,
+    40% {
+        transform: rotate(0deg);
+    }
+
+    60%,
+    100% {
+        transform: rotate(720deg);
+    }
+}
+/*fin animacion wpp*/
 
 footer {
     background-color: #333;
@@ -840,9 +881,10 @@ footer {
     .contenedorBq_card2{
         
         display: flex;
-        justify-content: space-between;
+        justify-content:center;
         flex-direction: column;
         margin: auto;
+        align-items: center;
         
         }
         

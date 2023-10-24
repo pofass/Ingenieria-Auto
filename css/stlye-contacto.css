@@ -102,6 +102,45 @@ footer svg:not(:last-child) {
     margin-right: 10px;
 }
 
+/*Icono whatsapp animacion*/
+.icono-whatsapp {
+    float: right;
+    position: fixed;
+    right: 30px;
+    top: 93vh;
+    z-index: 100;
+    animation: mianimacion 10s infinite alternate;
+    animation-timing-function: ease-in-out;
+    
+}
+
+#wpp {
+    height: 48px;
+    width: 48px;
+    margin-right: 1em;
+    
+    
+}
+
+#wpp:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+@keyframes mianimacion {
+
+    0%,
+    40% {
+        transform: rotate(0deg);
+    }
+
+    60%,
+    100% {
+        transform: rotate(720deg);
+    }
+}
+/*fin animacion wpp*/
+
 
 
 @media all and (max-width: 599px) {
