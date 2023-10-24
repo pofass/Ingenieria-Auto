@@ -130,13 +130,6 @@ figure {
 
 /*aca empieza el flexbox*/
 
-.catalogo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px;
-}
-
 .tarjeta {
     margin: 0;
     width: 33%;
@@ -165,14 +158,15 @@ figure {
 }
 
 .thumbnail :hover {
-    transition: transform 0.3s; 
-    transform: scale(1.1) 
+    transition: transform 0.3s; /* Agregar una transición suave */
+    transform: scale(1.2) /*agranda la img al pasar por encima con el mouse*/
 }
 
 .tarjeta-content p {
     text-align: center;
     color: #fff;
 }
+
 
 .tarjeta-content {
     padding: 10px; /* Aumenta el espacio interno de las tarjetas */
@@ -190,6 +184,58 @@ video {
     max-width: 100%; /* Hace que los videos sean responsivos */
     height: auto; /* Permite que la altura se ajuste automáticamente */
 }
+
+
+
+
+
+/*Icono whatsapp animacion*/
+.icono-whatsapp {
+    float: right;
+    position: fixed;
+    right: 30px;
+    top: 93vh;
+    z-index: 100;
+    animation: mianimacion 10s infinite alternate;
+    animation-timing-function: ease-in-out;
+    
+}
+
+#wpp {
+    height: 48px;
+    width: 48px;
+    margin-right: 1em;
+    
+    
+}
+
+#wpp:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+@keyframes mianimacion {
+
+    0%,
+    40% {
+        transform: rotate(0deg);
+    }
+
+    60%,
+    100% {
+        transform: rotate(720deg);
+    }
+}
+/*fin animacion wpp*/
+
+
+
+
+
+
+
+
+
 
 
 /*footer*/

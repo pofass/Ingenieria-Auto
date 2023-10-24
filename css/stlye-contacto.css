@@ -80,14 +80,12 @@ nav ul a:hover {
 }
 
 /*Aca comienza el footer*/
-
 footer {
     background-color: #333;
     display: flex;
-    flex-direction: column; /* Cambiamos la dirección a columna */
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center; 
     margin-top: 10px;
     margin-bottom: 5px;
     padding: 15px;
@@ -103,6 +101,45 @@ footer svg {
 footer svg:not(:last-child) {
     margin-right: 10px;
 }
+
+/*Icono whatsapp animacion*/
+.icono-whatsapp {
+    float: right;
+    position: fixed;
+    right: 30px;
+    top: 93vh;
+    z-index: 100;
+    animation: mianimacion 10s infinite alternate;
+    animation-timing-function: ease-in-out;
+    
+}
+
+#wpp {
+    height: 48px;
+    width: 48px;
+    margin-right: 1em;
+    
+    
+}
+
+#wpp:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+@keyframes mianimacion {
+
+    0%,
+    40% {
+        transform: rotate(0deg);
+    }
+
+    60%,
+    100% {
+        transform: rotate(720deg);
+    }
+}
+/*fin animacion wpp*/
 
 
 
