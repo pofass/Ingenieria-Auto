@@ -104,10 +104,16 @@ nav ul a:hover {
     text-shadow: 3px 3px 8px rgb(204, 106, 20);
 }
 
+.tarjeta-content {
+    margin: auto;
+    padding: 10px;
+}
+
 .tarjeta-content h2 {
     margin-top: 0;
     margin-bottom: .5em;
     font-weight: normal;
+    
 }
 
 .tarjeta-content p {
@@ -206,6 +212,12 @@ figure {
 }
 /*fin animacion wpp*/
 
+
+#videoAuto1 {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
 
 
 /*footer*/
