@@ -16,8 +16,8 @@ header {
     background-image: url("../Images/Auto01.png");
     background-size: cover;
     background-position: center;
-    opacity: 1; /* Ajusta la opacidad según tus preferencias */
-    z-index: -1;  /*Coloca la imagen de fondo detrás del contenido */
+    opacity: 1; 
+    z-index: -1; 
     
     
 }
@@ -167,6 +167,28 @@ figure {
     color: #fff;
 }
 
+
+.tarjeta-content {
+    padding: 10px; /* Aumenta el espacio interno de las tarjetas */
+}
+
+.cards {
+    flex-direction: column; /* Convierte las tarjetas en una columna en pantallas más pequeñas */
+}
+
+.thumbnail img {
+    max-width: 100%; /* Hace que las imágenes sean responsivas */
+}
+
+video {
+    max-width: 100%; /* Hace que los videos sean responsivos */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+}
+
+
+
+
+
 /*Icono whatsapp animacion*/
 .icono-whatsapp {
     float: right;
@@ -205,6 +227,14 @@ figure {
     }
 }
 /*fin animacion wpp*/
+
+
+
+
+
+
+
+
 
 
 
@@ -274,8 +304,17 @@ footer {
         display: block;
         padding: 0;
         margin-bottom: 5px;
-       
-        
     }
 
+
+.catalogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjeta {
+    width: 100%;
+    margin-bottom: 20px;
+}
 }
