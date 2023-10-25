@@ -163,6 +163,12 @@ figure {
 
 }
 
+.thumbnail {
+    width: auto;
+    margin: auto;
+    padding: 0;
+}
+
 .thumbnail :hover {
     transition: transform 0.3s; /* Agregar una transición suave */
     transform: scale(1.2) /*agranda la img al pasar por encima con el mouse*/
