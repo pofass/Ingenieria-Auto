@@ -182,6 +182,10 @@ footer svg:not(:last-child) {
 .mapa{
     margin-top: 5px;
     margin-bottom: 0px;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
 }
 
 footer {
