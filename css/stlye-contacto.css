@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -74,6 +78,14 @@ nav ul a:hover {
     color: rgb(88, 88, 170);
 }
 
+main {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 100px; /* altura del footer */
+}
+
 .mapa{
     margin-top: 20px;
     margin-bottom: 5px;
@@ -86,6 +98,10 @@ footer {
     margin-bottom: 5px;
     padding: 15px;
     text-align: center;
+}
+
+.icono-footers a {
+    color: #333;
 }
 
 
@@ -177,13 +193,20 @@ footer svg:not(:last-child) {
 } 
 
 .mapa{
-    margin-top: 5px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     overflow:hidden;
-    padding-bottom:56.25%;
+    padding: 4px;
     position:relative;
-    height:0;
+    width: 100%;
+    
 }
+
+iframe {
+    width: 100%;
+}
+
+
+
 
 footer {
     background-color: #333;

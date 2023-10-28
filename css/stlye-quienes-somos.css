@@ -229,6 +229,15 @@ main {
         text-align: center;
         padding: 10px;
     }
+
+
+
+.icono-footers a {
+    color: #333;
+}
+
+
+
     /* empieza responsive */
     @media all and (min-width :600px) and (max-width :1023px){
     
