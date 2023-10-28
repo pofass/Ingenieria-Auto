@@ -100,6 +100,10 @@ footer {
     text-align: center;
 }
 
+.icono-footers a {
+    color: #333;
+}
+
 
 footer svg {
     fill: #ffffff;
@@ -191,8 +195,9 @@ footer svg:not(:last-child) {
 .mapa{
     margin-bottom: 0;
     overflow:hidden;
-    padding: 0;
+    padding: 4px;
     position:relative;
+    width: 100%;
     
 }
 
