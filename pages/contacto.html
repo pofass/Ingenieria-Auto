@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/stlye-contacto.css">
     <link rel="shortcut icon" href="../Images/icon-coche-reparacion.png" type="image/x-icon">
@@ -32,37 +33,44 @@
     </div>
     <!-- Comienza el formulario -->
     <main>
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-            <h1>Contacto</h1>
-            <!-- <form action="procesar.php" method="POST"> -->
-                <form action="procesar.php" method="POST" id="formulario">
+        <div class="container mt-5">
+            <form id="myForm" class="needs-validation" novalidate>
                 <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Carlos" required="">
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="email@email.com" required="">
-            </div>
-            <div class="mb-3">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required=""></textarea>
-            </div>
-            <!-- <button type="submit" class="btn btn-primary">Enviar</button> -->
-            <button class="btn btn-primary" id="btn" type="submit">Enviar</button>
-        </form>
+                    <label for="exampleInputName" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="exampleInputName" placeholder="Nombre" required>
+                    <div class="invalid-feedback">
+                        Por favor, ingresa tu nombre.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleInputEmail" placeholder="email@gmail.com" required>
+                    <div class="invalid-feedback">
+                        Por favor, ingresa un correo electrónico válido.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleTextarea" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="escribenos tu mensaje!" required></textarea>
+                    <div class="invalid-feedback">
+                        Por favor, ingresa un mensaje.
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <div class="mt-3" id="successMessage" style="display: none;">
+                    <div class="alert alert-success" role="alert">
+                        ¡Formulario enviado con éxito!
+                    </div>
+                </div>
+            </form>
         </div>
         
-            <div class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104884.12804931271!2d-58.50224309671455!3d-34.76493734403452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd261abf8fb75%3A0xd3b4119f62723032!2sLomas%20de%20Zamora%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1697726715273!5m2!1ses!2sar" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-        
-        </div>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104884.12804931271!2d-58.50224309671455!3d-34.76493734403452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd261abf8fb75%3A0xd3b4119f62723032!2sLomas%20de%20Zamora%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1697726715273!5m2!1ses!2sar" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
     </main>
+    
     <div class="footer-container">
             <footer>
                 <div>
@@ -87,33 +95,44 @@
     </footer>
     </div>
 </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="../js/whatsapp-icono.js"></script>
 
     <script>
-        // Agrega un evento de escucha para el envío del formulario
-        document.getElementById("formulario").addEventListener("submit", function (e) {
-            e.preventDefault(); // Previene la recarga de la página
-    
-            // Realiza una solicitud AJAX para enviar el formulario al servidor
-            $.ajax({
-                type: "POST",
-                url: "procesar.php", // Ruta de tu archivo de procesamiento en el servidor
-                data: $(this).serialize(), // Serializa los datos del formulario
-                success: function (response) {
-                    // Limpia los campos del formulario
-                    $("#nombre, #email, #mensaje").val("");
-    
-                    // Muestra un mensaje de éxito al usuario
-                    $("#mensaje-envio").html("<div class='alert alert-success'>Los datos se enviaron correctamente.</div>");
-                },
-                error: function (error) {
-                    // Muestra un mensaje de error al usuario en caso de fallo en el envío
-                    $("#mensaje-envio").html("<div class='alert alert-danger'>Error al enviar los datos. Por favor, inténtalo de nuevo más tarde.</div>");
-                }
-            });
-        });
+         // Validación de formulario Bootstrap
+         (function () {
+            'use strict'
+
+            // Obtener todos los formularios a los que queremos aplicar estilos de validacion de Bootstrap personalizados
+            var forms = document.querySelectorAll('.needs-validation')
+            // Bucle sobre ellos y evitar el envío
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        } else {
+                            // Mostrar el mensaje de éxito si el formulario es válido
+                            document.getElementById('successMessage').style.display = 'block';
+                            form.reset(); // Restablecer campos del formulario
+                            event.preventDefault(); // Evitar el reinicio de la página
+                             // Desaparecer el mensaje de éxito después de 3 segundos
+                             setTimeout(function(){
+                                document.getElementById('successMessage').style.display = 'none';
+                            }, 2000);
+                        }
+                        
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+
     </script>
     </body>
     </html>

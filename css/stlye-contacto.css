@@ -89,6 +89,9 @@ main {
 .mapa{
     margin-top: 20px;
     margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Aca comienza el footer*/
@@ -130,7 +133,6 @@ footer svg:not(:last-child) {
 #wpp {
     height: 48px;
     width: 48px;
-    margin-right: 1em;
     
     
 }
