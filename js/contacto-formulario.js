@@ -7,25 +7,33 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
         event.stopPropagation();
         form.classList.add('was-validated');
-        
-        if (form.checkValidity() === false) {
-            return;
-        }
 
         var nameInput = document.getElementById('exampleInputName');
         var nameValue = nameInput.value;
-        var regex = /^[A-Za-z]+$/;
+        var regex = /^[A-Za-z\s]+$/;
+
         if (!regex.test(nameValue)) {
             nameInput.classList.add('is-invalid');
             document.getElementById('nameValidationFeedback').style.display = 'block';
-        } else {
+            return; // Detener el flujo si el nombre no es válido
+        }
+
+        if (form.checkValidity()) {
+            const nombre = form.elements.exampleInputName.value;
+            const correo = form.elements.exampleInputEmail.value;
+            const mensaje = form.elements.exampleTextarea.value;
+            const telefono = '123667789123';
+            const mensajeWhatsapp = `Nombre: ${nombre}\nCorreo electrónico: ${correo}\nMensaje: ${mensaje}`;
+            const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensajeWhatsapp)}`;
+            window.open(url, '_blank');
+
             successMessage.style.display = 'block';
             setTimeout(function() {
                 successMessage.style.display = 'none';
                 form.reset();
                 form.classList.remove('was-validated'); // Restablecer estado de validación
                 nameInput.classList.remove('is-invalid'); // Restablecer estado de validación para el campo de nombre
-            }, 2000);
+            }, 3000);
         }
     }, false);
 });
